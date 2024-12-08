@@ -30,7 +30,7 @@ function CoursesList() {
 
       <div className="courses">
         {filteredData.map((data) => (
-          <Link key={data.id} to={`course/${data.id}`} className="box">
+          <Link key={data.id} to={`/${data.id}`} className="box">
             {data.course}
           </Link>
         ))}

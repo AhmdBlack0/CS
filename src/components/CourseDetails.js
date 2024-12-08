@@ -41,7 +41,7 @@ function CourseDetails() {
         <button onClick={handleShowSummary}>Summary</button>
       </div>
 
-      {showLectures && course.lectures.length > 0 ? (
+      {showLectures && (
         <>
           {course.lectures.map((lecture, index) => (
             <div key={index} className="box">
@@ -54,7 +54,7 @@ function CourseDetails() {
             </div>
           ))}
         </>
-      ) : null}
+      )}
 
       {showSection && (
         <div>
